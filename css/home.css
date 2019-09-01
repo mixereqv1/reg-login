@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: url("../bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+body .home-main {
+  margin-top: 100px;
+  width: 25%;
+  height: 40%;
+}
+
+body .home-main header {
+  padding: 15px;
+  background: #5d78cf;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+body .home-main .content {
+  padding: 15px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+body .home-main .content .welcome {
+  padding: 10px;
+}
+
+body .home-main .content .welcome span {
+  font-weight: bold;
+}
+
+body .home-main .content .logout {
+  padding: 10px;
+  color: #9e2a28;
+  text-decoration: none;
+}
+
+body .home-main .content .show-users {
+  width: 70%;
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #fff;
+  background: #5d78cf;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all .3s ease;
+}
+
+body .home-main .content .show-users:hover {
+  cursor: pointer;
+  background: #3a52a3;
+}
+
+body .home-main .content .users-list {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  list-style-position: inside;
+  width: 100%;
+}
+
+body .home-main .content .name-del {
+  padding: 10px;
+  width: 300px;
+  margin: 10px auto;
+}
+
+body .home-main .content .submit-del {
+  padding: 10px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  background: #5d78cf;
+  border-radius: 5px;
+  transition: all .3s ease;
+  box-shadow: 2px 2px 10px #000;
+}
+
+body .home-main .content .submit-del:hover {
+  cursor: pointer;
+  background: #3a52a3;
+}
+
+.error {
+  width: 93%;
+  margin: 10px auto 0;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin: 20px auto 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-main {
+    margin-top: 50px !important;
+    width: 85% !important;
+  }
+  .home-main header, .home-main .content {
+    width: 95% !important;
+  }
+}
