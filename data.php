@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect('localhost', 'root', 'Matiozo1w!', 'accounts');
+    $db = mysqli_connect('localhost', 'root', 'encoded', 'accounts');
     $sql = 'SELECT * FROM users';
     $result = mysqli_query($db,$sql);
     $users = [];
